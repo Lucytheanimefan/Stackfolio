@@ -1,0 +1,155 @@
+/*---------------nav bar----------------*/
+
+.nav-tabs > li,
+.nav-pills > li {
+    float: none;
+    display: inline-block;
+    *display: inline;
+    /* ie7 fix */
+    zoom: 1;
+    /* hasLayout ie7 trigger */
+    width: 15%;
+}
+
+.nav-tabs,
+.nav-pills {
+    text-align: center;
+    width: 100%;
+}
+
+li {
+    font-size: 16px;
+}
+
+.nav ul li:hover {
+    background: #94b399;
+    color: #fff;
+}
+
+
+/*---------------search bar----------------*/
+
+.searchbar {
+    /*margin: auto;*/
+    text-align: center;
+    position: relative;
+    top: 60px;
+}
+
+#search input[type="text"] {
+    background: url(search-white.png) no-repeat 10px 6px #444;
+    border: 0 none;
+    font: bold 14px Arial, Helvetica, Sans-serif;
+    text-align: center;
+    color: #d7d7d7;
+    width: 15%;
+    padding: 6px 15px 6px 35px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    -webkit-transition: all 0.7s ease 0s;
+    -moz-transition: all 0.7s ease 0s;
+    -o-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
+}
+
+#search input[type="text"]:focus {
+    background: url(search-dark.png) no-repeat 10px 6px #fcfcfc;
+    color: #6a6f75;
+    width: 17%;
+    height: 30px;
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
+    outline: none;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+/*------------------default dashboard integrate queue---------*/
+#dropDown{
+    margin-top: 70px;
+    text-align: center
+}
+
+#queue{
+    text-align: center;
+    font-size: 20px;
+    width: 70%;
+    margin: 0 auto;
+}
+#today p, #queue p, #testing p{
+    text-align: left;
+    font-size: 15px;
+}
+
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
+button.accordion:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2796";
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow-y: scroll;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+}
+
+div.panel.show {
+    opacity: 1;
+    max-height: 500px;
+}
+
+textarea{
+    text-align: center;
+    align: center;
+    width: 100%;
+
+}
+
+.depForm{
+    text-align: center;
+}
+
+input{
+    text-align: center;
+    margin: 0 auto;
+}
+/*-------------Loading wheel---------------*/
+
+#spinnerID >.spinner {
+    width: 25%;
+    height: 25%;
+}
